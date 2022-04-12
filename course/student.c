@@ -1,4 +1,13 @@
-#include <stdio.h>
+/**
+ * @file student.c
+ * @author Sharmin Ahmed (ahmes179@mcmaster.ca)
+ * @brief 
+ * @version 0.1
+ * @date 2022-04-12
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include <stdlib.h>
 #include <string.h>
 #include "student.h"
@@ -16,6 +25,7 @@ void add_grade(Student* student, double grade)
   student->num_grades++;
 
   //Allocate memory for the grade array
+  //Calloc to initialize first index; realloc to expand array
   if (student->num_grades == 1) student->grades = calloc(1, sizeof(double));
   else 
   {

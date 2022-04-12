@@ -1,3 +1,13 @@
+/**
+ * @file course.c
+ * @author Sharmin Ahmed (ahmes179@mcmaster.ca)
+ * @brief 
+ * @version 0.1
+ * @date 2022-04-12
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "course.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -14,6 +24,7 @@ void enroll_student(Course *course, Student *student)
   course->total_students++;
 
   //Allocate memory for the Student array 
+  //calloc for initializing and realloc for redo
   if (course->total_students == 1) 
   {
     course->students = calloc(1, sizeof(Student));

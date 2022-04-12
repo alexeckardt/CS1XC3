@@ -1,3 +1,13 @@
+/**
+ * @file course.h
+ * @author Sharmin Ahmed (ahmes179@mcmaster.ca)
+ * @brief 
+ * @version 0.1
+ * @date 2022-04-12
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "student.h"
 #include <stdbool.h>
 
@@ -14,6 +24,7 @@ typedef struct _course
   int total_students;
 } Course;
 
+//Functions
 void enroll_student(Course *course, Student *student);
 void print_course(Course *course);
 Student *top_student(Course* course);
