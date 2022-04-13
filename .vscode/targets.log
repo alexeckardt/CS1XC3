@@ -1,4 +1,0 @@
-make.exe all -f c:\Users\alexe\Documents\C\1XC3 Finale\github file\CS1XC3\make --print-data-base --no-builtin-variables --no-builtin-rules --question
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
-
